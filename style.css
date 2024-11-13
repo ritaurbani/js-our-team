@@ -14,8 +14,10 @@ body {
 }
 
 .container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 200px;
 }
 
 section {
@@ -24,12 +26,9 @@ section {
 
 .section-title {
     margin: 20px 0;
-
     text-align: center;
     text-transform: uppercase;
-
     color: #333;
-
     font-size: 21px;
     font-weight: 600;
     line-height: 1.6;
@@ -38,9 +37,7 @@ section {
 .section-description {
     max-width: 600px;
     margin: 0 auto;
-
     text-align: center;
-
     line-height: 1.8;
 }
 
@@ -48,41 +45,19 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .team-card {
     flex-basis: 370px;
-
     margin-top: 50px;
     margin-right: 28px;
+    width: calc(95% / 3);
+    /* background-color: black; */
+    color: black;
+    display: flex;
 }
-
-.team-container::after {
-    flex: auto;
-
-    content: '';
-}
-
-.card-image {
-    overflow: hidden;
-
-    cursor: pointer;
-}
-
-.card-image img {
-    display: block;
-
-    max-width: 100%;
-
-    transition: all 1s;
-}
-
-.card-image:hover img {
-    transform: scale(1.1, 1.1);
-
-    opacity: 0.9;
-}
-
+        
 .card-text {
     padding: 20px;
 
@@ -97,7 +72,7 @@ section {
     font-weight: 400;
 }
 
-/* .form-container {
+.form-container {
     max-width: 480px;
     margin: auto;
 }
@@ -126,4 +101,4 @@ button {
     margin-top: 2em;
 
     font-size: 1rem;
-} */
+}
